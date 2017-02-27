@@ -3,7 +3,6 @@
 </template>
 
 <script>
-
 module.exports = {
 	data () {
 
@@ -14,5 +13,4 @@ module.exports = {
 		}
 	}
 }
-
 </script>

@@ -8,20 +8,6 @@ var vendors = [
   'vuex'
 ];
 
-fs.readFile('./index.html', 'utf8', (err, data) => {
-  if (!err) {
-    var dataStr = data.toString();
-    dataStr = dataStr.replace('<!-- dll -->', '<script src="./dist/Dll.js"></script>');
-    fs.writeFile('./index.html', dataStr, (err) => {
-      if (!err) {
-        console.log('Insert dll_tag successfully')
-      } else {
-        console.log(err);
-      }
-    });
-  }
-});
-
 module.exports = {
   entry: {
     vendor: vendors
