@@ -6,9 +6,7 @@ import Vuex from 'vuex';
 
 import App from './component/App.vue';
 
-const str = '13';
-
 new Vue({
-	el: '#demo',
+	el: '#app',
 	render: h => h(App)
 })
