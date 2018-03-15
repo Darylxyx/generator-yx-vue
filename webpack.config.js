@@ -1,18 +1,23 @@
 var webpack = require('webpack'),
 	path = require('path');
 
+function resolve(dir) {
+	return path.join(__dirname, dir);
+}
+
 module.exports = {
 	entry: ['babel-polyfill', './src/index.js'],
 	output: {
-		path: path.join(__dirname, 'dist'),
-		filename: 'bundle.js'
+		path: resolve('dist'),
+		filename: 'bundle.js',
+	},
+	resolve: {
+		alias: {
+			'@': resolve('src'),
+		},
 	},
 	module: {
 		loaders: [
-			{
-				test: /\.css$/,
-				loader: 'style-loader!css-loader'
-			},
 			{
 				test: /\.js(x)*$/,
 				loader: 'babel-loader',
@@ -27,8 +32,12 @@ module.exports = {
                 exclude: /node_modules/
 			},
 			{
-				test: /\.(png|jpg)$/,
-				loader: 'url-loader?limit=8192&name=images/[hash:8].[name].[ext]'
+				test: /\.(png|jpe?g|gif|svg)$/,
+				loader: 'url-loader',
+				options: {
+					limit: 10000,
+					name: 'img/[name].[hash:7].text',
+				},
 			}
 		]
 	},
