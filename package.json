@@ -2,6 +2,7 @@
   "name": "generator-yx",
   "version": "2.0.0",
   "description": "",
+  "author": "yuxiao.xie",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --content-base --port 3000 --color",
@@ -12,7 +13,6 @@
     "url": "git+https://github.com/Darylxyx/generator-yx.git"
   },
   "keywords": [],
-  "author": "yuxiao.xie",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Darylxyx/generator-yx/issues"
@@ -24,11 +24,12 @@
     "babel-helper-vue-jsx-merge-props": "^2.0.2",
     "babel-loader": "^6.2.4",
     "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
-    "babel-polyfill": "^6.26.0",
     "css-loader": "^0.23.1",
+    "eslint": "^4.18.2",
     "file-loader": "^0.9.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
