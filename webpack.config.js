@@ -12,6 +12,7 @@ module.exports = {
 		filename: 'bundle.js',
 	},
 	resolve: {
+		extensions: ['.js', '.vue', '.json'],
 		alias: {
 			'@': resolve('src'),
 		},
