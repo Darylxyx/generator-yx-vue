@@ -21,6 +21,5 @@ const ENV = apiConfig[window.location.host];
 
 export default {
 	install(Vue) {
-
 	}
 };
