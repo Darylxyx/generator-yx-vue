@@ -18,6 +18,7 @@ export default {
 <style lang='less' scoped>
 .hello {
   h1, h2 {
+    font-size: 3rem;
     font-weight: normal;
   }
 }
