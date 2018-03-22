@@ -4,17 +4,17 @@ window.axios = axios;
 
 const apiConfig = {
 	localhost: {
-		url: '',
+		url: ''
 	},
 	'test环境url': {
-		url: '',
+		url: ''
 	},
 	'demo环境url': {
-		url: '',
+		url: ''
 	},
 	'生产环境url': {
-		url: '',
-	},
+		url: ''
+	}
 };
 
 const ENV = apiConfig[window.location.host];
@@ -22,5 +22,5 @@ const ENV = apiConfig[window.location.host];
 export default {
 	install(Vue) {
 
-	},
+	}
 };
