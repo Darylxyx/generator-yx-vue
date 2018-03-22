@@ -1,32 +1,30 @@
-# Generator yx
-Basic configuration has been completed base on Webpack and use NodeJS extended.
-Later,will try to use Gulp and something extend this.
+# project
 
-### Usage
+> A Vue.js project
 
-```
+## Build Setup
+
+``` bash
+# install dependencies
 npm install
-webpack --config webpack.dll.config.js -p
-npm start
-open loaclhost:3000
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
 ```
 
-Now edit `src/index.js` & `src/main.css`.  
-Your changes will appear without refresh the browser.
-
-### Packing
-
-```
-webpack --watch
-webpack -p
-node pack.js
-```
-Command `--watch` will repack the project when you change.  
-Command `-p` will compress the bundle.    
-`pack.js` It will copy a HTML file into dist folder. So, you can directly run the dist folder in static or any server.
-
-### Dependencies
-* webpack
-* webpack-dev-server
-* babel-loader
-* nodejs
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
