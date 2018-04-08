@@ -2,23 +2,6 @@
 
 	function Base() {}
 
-	Base.prototype.server = function(Ajax) { //Server方法
-		
-		var Server = Ajax;
-
-		return function(data, url, callback, type, dataType) {
-			Server({
-				data: data || {},
-				type: type || 'get',
-				url: url,
-				dataType: dataType || 'json',
-				done: (res) => {
-					callback && callback(res);
-				}
-			});
-		}
-	};
-
 	Base.prototype.queryParams = function() { //获取查询字符串参数
 		var search = location.search,
 			theRequest = {};
